@@ -107,7 +107,11 @@ docker logs napcat
 
 ### 在 NapCat 中添加 WebSocket 客户端
 
-切换回 NapCat 的管理面板，点击 `网络配置->新建->WebSockets客户端`。
+首先访问 NapCat 管理面板，访问地址分两种场景：
+- 本地部署（非服务器/Docker环境）：默认地址 `localhost:6099`（也可使用 `127.0.0.1:6099`）
+- 服务器部署 / Docker 部署：访问 `{公网IP/服务器内网IP}:6099`（将大括号内内容替换为实际的服务器IP地址，默认防火墙端口已开放）
+
+切换回 NapCat 的管理面板后，点击 `网络配置->新建->WebSockets客户端`。
 
 <img width="649" height="751" alt="jiaochenXJY" src="https://github.com/user-attachments/assets/5044f96a-a81f-407a-a3b1-0c518499eda4" />
 
